@@ -50,7 +50,7 @@ The only fields that may be cleared are the password fields
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
       
-      public_html/Project/Milestone1_proofImage/Email_not_valid.png
+      ![](public_html/Project/Milestone1_proofImage/Email_not_valid.png)
 
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
