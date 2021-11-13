@@ -1,79 +1,86 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-    <head>
-        <title>Problem 1</title>
-        <meta charset="utf-8">
-        <script>
-          window.addEventListener("load", () => {
-            console.log("loaded via javascript");
-      
-          });
-          function getCurrentSelection(link) {
-            setTimeout(() => {
-      
-              var currentClickedLinkText = link.innerText;
-              
-              updateCurrentPage(currentClickedLinkText);
-            }, 100);
-          }
-        </script>
-    <style>
+<head>
+  <title>Problem 1</title>
+  <meta charset="utf-8">
+  <script>
+    window.addEventListener("load", () => {
+      console.log("loaded via javascript");
+      // TODO: add any extra onload processing you may need here
+    });
+    function getCurrentSelection(link) {
+      setTimeout(() => {
+        // added this delay here as some solutions may require it to update properly (i.e., click code may complete before the navigation changes)
+        // TODO: add code for processing the current selection
+<<<<<<< HEAD
+        // Get current clicked link text in navigation bar
+=======
+        // Get current clicked link text in navigation bar.
+>>>>>>> 5cdd56add54e8fa8c52808bf53294d4b83c56ba9
+        var currentClickedLinkText = link.innerText;
+
+        updateCurrentPage(currentClickedLinkText);
+      }, 100);
+    }
+  </script>
+  <style>
+    /* TODO: make edits here */
+
     
     ul li {
+      
       display: inline;
+      
       padding: 0.3rem;
+      
       font-size: large;
     }
-
     ul {
+      
       list-style-type: none;
-      background-color: rgb(232, 113, 8);
+      
+      background-color: rgb(120, 183, 157);
+      
       padding: 0.2rem 1.4rem;
     }
-
     ul a:hover {
-     color: rgb(21, 21, 206);
+      color: rgb(134, 212, 195);
     }
 
     ul li::before {
+      
       content: '✓';
     }
 
+    
     ul li a {
+      
       display: inline-block;
+     
       padding: 0.3rem;
     }
 
     h1::first-letter,
     a::first-letter {
+    
       text-transform: uppercase;
     }
-    </style>
-    <!-- make the necessary edits above this line -->
+  </style>
+  <h1>Problem 1</h1>
+  <ul>
+    <li><a href="#" onclick='getCurrentSelection(this)'>login</a></li>
+    <li><a href="#" onclick='getCurrentSelection(this)'>Register</a></li>
+    <li><a href="#" onclick='getCurrentSelection(this)'>profile</a></li>
+    <li><a href="#" onclick='getCurrentSelection(this)'>logout</a></li>
+  </ul>
 
+  <script src="external.js"></script>
 
-    <!-- Do not edit anything below this line, doing so will lose points-->
-    <script src="https://mt85.herokuapp.com/M3/problem1.js">
-            //Don't edit anything in this tag and do not delete it
-    </script>
+  <script src="https://jk10.herokuapp.com/R10/question.js">
+  </script>
 </head>
-<!-- Do not edit anything below this line, doing so will lose points-->
-
-<body onload="check();updateCurrentPage('Primary');">
-    <header>
-        <h2>Problem 1</h2>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#" onclick='getCurrentSelection(this)'>login</a></li>
-            <li><a href="#" onclick='getCurrentSelection(this)'>Register</a></li>
-            <li><a href="#" onclick='getCurrentSelection(this)'>profile</a></li>
-            <li><a href="#" onclick='getCurrentSelection(this)'>logout</a></li>
-          </ul>
-    </nav>
-    <h1></h1>
-    <h3>Challenges</h3>
+<h3>Challenges</h3>
     <ul>
         <li>Edit the given <code>&lt;style&gt;</code> tag to customize the appearance of this page
             <ul>
@@ -107,5 +114,7 @@
     </ul>
     <footer></footer>
 </body>
+
+</html>
 
 </html>
