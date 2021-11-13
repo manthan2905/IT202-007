@@ -42,7 +42,7 @@ System should let user know if username or email is taken and allow the user to 
 The only fields that may be cleared are the password fields
 
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
     https://github.com/manthan2905/IT202-007/pull/46
@@ -58,31 +58,83 @@ The only fields that may be cleared are the password fields
   
   ![Password_donot_match](https://user-images.githubusercontent.com/68133264/141606809-65aa23ba-212c-4bb7-8b6e-44495bda39e8.jpg)
 
+  Succefully registered
+  
+  <img width="1440" alt="Successfully registered" src="https://user-images.githubusercontent.com/68133264/141606865-68064d53-1529-4fe6-bf2d-e4a56d7a92a0.png">
+
+user table
+
+<img width="1133" alt="User_table" src="https://user-images.githubusercontent.com/68133264/141606908-fda4532a-9002-4c36-8f32-cc996a09b226.png">
+
+  
   
 
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) User will be able to login to their account (from the proposal bullet point, if it's a sub-point indent it properly)
+
+Form
+User can login with email or username
+This can be done as a single field or as two separate fields
+Password is required
+User should see friendly error messages when an account either doesn’t exist or if passwords don’t match
+Logging in should fetch the user’s details (and roles) and save them into the session.
+User will be directed to a landing page upon login
+This is a protected page (non-logged in users shouldn’t have access)
+This can be home, profile, a dashboard, etc
+
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Complete (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
-      - PR link #1 (repeat as necessary)
+      https://github.com/manthan2905/IT202-007/pull/46
+         - PR link #1 (repeat as necessary)
     - Screenshots
+
+user able to login
+
+<img width="1440" alt="User_able_to_login" src="https://user-images.githubusercontent.com/68133264/141607005-a45c79ed-20ee-4d9b-abb9-21b136c3aeaf.png">
+
+incorrect Password
+
+<img width="1155" alt="Incorrect_password" src="https://user-images.githubusercontent.com/68133264/141607055-408a01e8-7ef6-4e07-93de-38480a20aeab.png">
+
+user don't exist
+
+<img width="1152" alt="User_not_exist" src="https://user-images.githubusercontent.com/68133264/141607085-92ab04be-d395-4d8b-83ee-306bae4e746a.png">
+
+
+
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Basic security rules implemented (from the proposal bullet point, if it's a sub-point indent it properly)
+
+Authentication:
+Function to check if user is logged in
+Function should be called on appropriate pages that only allow logged in users
+Roles/Authorization:
+Have a roles table (see below)
+
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Complete (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
-      - PR link #1 (repeat as necessary)
+     https://github.com/manthan2905/IT202-007/pull/46
     - Screenshots
+check if user is logged in 
+
+<img width="1156" alt="Check_User_is_logged_in" src="https://user-images.githubusercontent.com/68133264/141607382-553f5103-95e3-4847-82f8-d8fe087bd7ac.png">
+
+
+roles table 
+
+<img width="1011" alt="Roles_table" src="https://user-images.githubusercontent.com/68133264/141607267-0e061b27-e21c-48c8-a04d-580e939edd5c.png">
+
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
