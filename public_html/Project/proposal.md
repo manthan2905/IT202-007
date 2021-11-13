@@ -49,8 +49,16 @@ The only fields that may be cleared are the password fields
       - PR link #1 (repeat as necessary)
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+ 
+ Email Not Valid
   
   <img width="1440" alt="Email_not_valid" src="https://user-images.githubusercontent.com/68133264/141606791-851a7281-d150-49d0-9d37-02a15be4953a.png">
+  
+  password do not match
+  
+  ![Password_donot_match](https://user-images.githubusercontent.com/68133264/141606809-65aa23ba-212c-4bb7-8b6e-44495bda39e8.jpg)
+
+  
 
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
