@@ -3,7 +3,7 @@
 ## Github Link: (Prod Branch of Project Folder)
 ## Project Board Link: 
 ## Website Link: (Heroku Prod of Project folder)
-## Your Name:
+## Your Name: Manthan Patel
 
 <!--
 ### Line item / Feature template (use this for each bullet point)
@@ -26,7 +26,36 @@
 ### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) User will be able to register a new account (from the proposal bullet point, if it's a sub-point indent it properly)
+
+Form Fields
+Username, email, password, confirm password (other fields optional)
+Email is required and must be validated
+Username is required
+Confirm password’s match
+Users Table
+Id, username, email, password (60 characters), created, modified
+Password must be hashed (plain text passwords will lose points)
+Email should be unique
+Username should be unique
+System should let user know if username or email is taken and allow the user to correct the error without wiping/clearing the form
+The only fields that may be cleared are the password fields
+
+  -  List of Evidence of Feature Completion
+    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Pull Requests
+    https://github.com/manthan2905/IT202-007/pull/46
+      - PR link #1 (repeat as necessary)
+    - Screenshots
+      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+      ![]Milestone1_proofImage/Email_not_valid
+
+        - Screenshot #1 description explaining what you're trying to show
+### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
+#### Don't delete this
+
+- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -38,7 +67,7 @@
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -50,7 +79,7 @@
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -62,7 +91,7 @@
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -74,7 +103,7 @@
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -86,7 +115,7 @@
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -98,7 +127,7 @@
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -110,7 +139,7 @@
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -119,7 +148,9 @@
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
+### End Line item / Feature Template
+- Milestone 2
+
 #### Don't delete this
 
 - [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
@@ -132,7 +163,6 @@
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template
-- Milestone 2
 - Milestone 3
 - Milestone 4
 ### Intructions
