@@ -140,13 +140,117 @@ roles table
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
-- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/11/2021 of completion) Basic Roles implemented (from the proposal bullet point, if it's a sub-point indent it properly)
+
+Have a Roles table	(id, name, description, is_active, modified, created)
+Have a User Roles table (id, user_id, role_id, is_active, created, modified)
+Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
+
   -  List of Evidence of Feature Completion
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
+      https://github.com/manthan2905/IT202-007/pull/46
       - PR link #1 (repeat as necessary)
     - Screenshots
+   
+  user Table
+  
+  <img width="1133" alt="User_table" src="https://user-images.githubusercontent.com/68133264/141607463-1efc059c-46cd-489d-9d3b-c0547b9b7464.png">
+
+  role table
+  
+  <img width="1011" alt="Roles_table" src="https://user-images.githubusercontent.com/68133264/141607476-2ee9e5eb-cfeb-4b58-8c8b-80324d5ded87.png">
+
+  
+      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+        - Screenshot #1 description explaining what you're trying to show
+### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
+#### Don't delete this
+
+- [ ] \(11/11/2021 of completion) Site should have basic styles/theme applied; everything should be styled (from the proposal bullet point, if it's a sub-point indent it properly)
+
+I.e., forms/input, navigation bar, etc
+
+  -  List of Evidence of Feature Completion
+    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Pull Requests
+       https://github.com/manthan2905/IT202-007/pull/46
+    - Screenshots
+
+styling
+
+<img width="1440" alt="User_able_to_login" src="https://user-images.githubusercontent.com/68133264/141607526-e7130b17-a02d-4dac-9f70-03b8955f8142.png">
+
+<img width="1152" alt="User_not_exist" src="https://user-images.githubusercontent.com/68133264/141607529-387d9af7-5b2f-407b-a8c5-a4b02c50c399.png">
+
+
+<img width="1155" alt="Incorrect_password" src="https://user-images.githubusercontent.com/68133264/141607531-242615c4-80a4-465c-a199-c60660886a4e.png">
+
+
+      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+        - Screenshot #1 description explaining what you're trying to show
+### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
+#### Don't delete this
+
+- [ ] \(11/11/2021 of completion) Any output messages/errors should be “user friendly" (from the proposal bullet point, if it's a sub-point indent it properly)
+
+Any technical errors or debug output displayed will result in a loss of points
+
+  -  List of Evidence of Feature Completion
+    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Pull Requests
+      https://github.com/manthan2905/IT202-007/pull/46
+    - Screenshots
+
+error message user friendly
+
+![Password_donot_match](https://user-images.githubusercontent.com/68133264/141607556-c2ab5b7c-175e-4250-8ef8-d3f7f88ed212.jpg)
+
+
+      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+        - Screenshot #1 description explaining what you're trying to show
+### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
+#### Don't delete this
+
+- [ ] \(11/11/2021 of completion) User will be able to see their profile (from the proposal bullet point, if it's a sub-point indent it properly)
+
+Email, username, etc
+
+  -  List of Evidence of Feature Completion
+    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Pull Requests
+       https://github.com/manthan2905/IT202-007/pull/46
+    - Screenshots
+
+user Profile
+
+<img width="1155" alt="User_page" src="https://user-images.githubusercontent.com/68133264/141607601-22149352-1877-4375-8f80-f08965029176.png">
+
+
+      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+        - Screenshot #1 description explaining what you're trying to show
+### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
+#### Don't delete this
+
+- [ ] \(11/11/2021 of completion) User will be able to edit their profile (from the proposal bullet point, if it's a sub-point indent it properly)
+  -  List of Evidence of Feature Completion
+    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Pull Requests
+       https://github.com/manthan2905/IT202-007/pull/46
+    - Screenshots
+
+user able to change password
+
+<img width="1151" alt="reset_pass" src="https://user-images.githubusercontent.com/68133264/141607682-c313b69c-66be-4a1f-b8bf-9f48f8980ae9.png">
+
+<img width="1153" alt="after_reset" src="https://user-images.githubusercontent.com/68133264/141607688-679a1118-fcbb-48dd-afa0-69fc0d9995cd.png">
+
+
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
@@ -157,59 +261,12 @@ roles table
     - Status: Pending (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
-#### Don't delete this
-
-- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
-#### Don't delete this
-
-- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
-#### Don't delete this
-
-- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
-#### Don't delete this
-
-- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
+       https://github.com/manthan2905/IT202-007/pull/46
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template
+
 - Milestone 2
 
 #### Don't delete this
