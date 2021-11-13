@@ -49,9 +49,9 @@ The only fields that may be cleared are the password fields
       - PR link #1 (repeat as necessary)
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-      
-   ![](public_html/Project/Milestone1_proofImage/Email_not_valid.png)
-   
+  
+  <img width="1440" alt="Email_not_valid" src="https://user-images.githubusercontent.com/68133264/141606791-851a7281-d150-49d0-9d37-02a15be4953a.png">
+
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
