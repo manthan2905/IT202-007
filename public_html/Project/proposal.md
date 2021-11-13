@@ -133,6 +133,11 @@ after logout
 
 <img width="1152" alt="After_logout" src="https://user-images.githubusercontent.com/68133264/141607826-e8948951-a390-4a31-a4b2-33ed1f7541aa.png">
 
+don't allow back click
+
+<img width="1439" alt="no_go_back" src="https://user-images.githubusercontent.com/68133264/141608210-2f617e87-7226-4efa-95ea-e7320650f76d.png">
+
+
 
 
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
