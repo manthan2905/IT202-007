@@ -1,25 +1,26 @@
 <?php
 require(__DIR__ . "/../../partials/nav.php");
 ?>
-<form onsubmit="return validate(this)" method="POST">
-    <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" required />
-    </div>
-    <div>
-        <label for="username">Username</label>
-        <input type="text" name="username" required maxlength="30" />
-    </div>
-    <div>
-        <label for="pw">Password</label>
-        <input type="password" id="pw" name="password" required minlength="8" />
-    </div>
-    <div>
-        <label for="confirm">Confirm</label>
-        <input type="password" name="confirm" required minlength="8" />
-    </div>
-    <input type="submit" value="Register" />
-</form>
+<div class="container">
+  <div class="card">
+	<h2>Create an account</h2>
+    <form onsubmit="return validate(this)" method="POST">
+        <div>
+            <input class="inp_fld" type="email" name="email" required placeholder="Email"/>
+        </div>
+        <div>
+            <input class="inp_fld" type="text" name="username" required maxlength="30" placeholder="Username"/>
+        </div>
+        <div>
+            <input class="inp_fld" type="password" id="pw" name="password" required minlength="8" placeholder="Password"/>
+        </div>
+        <div>
+            <input class="inp_fld" type="password" name="confirm" required minlength="8"placeholder="Confirm Password" />
+        </div>
+        <input class="inp_btn" type="submit" value="Register" />
+    </form>
+  </div>
+</div>
 <script>
     function validate(form) {
         //TODO 1: implement JavaScript validation
@@ -28,6 +29,48 @@ require(__DIR__ . "/../../partials/nav.php");
         return true;
     }
 </script>
+<style>
+	.container {
+    	width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    }
+    .card {
+		width: 30em;
+		padding: 2em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		border-radius: 10px;
+    }
+	.inp_fld {
+        border: solid 1px gray;
+		border-radius: 5px;
+		margin: 1em;
+		height: 35px;
+		width: 285px;
+		padding-left: 25px;
+    }
+	
+	.inp_btn {
+		border: none;
+		background-color: black;
+		border-radius: 5px;
+		margin: 1em;
+		height: 35px;
+		width: 285px;
+		color: white;
+		font-weight: bold;
+	}
+	
+	h2 {
+		font-family: Arial, sans-serif;
+	}
+</style>
+
 <?php
 //TODO 2: add PHP Code
 if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm"])) {
