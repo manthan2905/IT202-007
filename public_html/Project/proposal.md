@@ -112,6 +112,34 @@ user don't exist
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
 #### Don't delete this
 
+- [ ] \(11/11/2021 of completion) User will be able to logout (from the proposal bullet point, if it's a sub-point indent it properly)
+
+Logging out will redirect to login page
+User should see a message that they’ve successfully logged out
+Session should be destroyed (so the back button doesn’t allow them access back in)
+
+  -  List of Evidence of Feature Completion
+    - Status: complete (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Pull Requests
+       https://github.com/manthan2905/IT202-007/pull/46
+    - Screenshots
+
+before logout
+
+<img width="1152" alt="Before_logout" src="https://user-images.githubusercontent.com/68133264/141607821-7a8b0cad-1158-41d6-b8f9-9e8d17d2c236.png">
+
+after logout
+
+<img width="1152" alt="After_logout" src="https://user-images.githubusercontent.com/68133264/141607826-e8948951-a390-4a31-a4b2-33ed1f7541aa.png">
+
+
+
+      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+        - Screenshot #1 description explaining what you're trying to show
+### End Line item / Feature Template
+#### Don't delete this
+
 - [ ] \(11/11/2021 of completion) Basic security rules implemented (from the proposal bullet point, if it's a sub-point indent it properly)
 
 Authentication:
@@ -147,7 +175,7 @@ Have a User Roles table (id, user_id, role_id, is_active, created, modified)
 Include a function to check if a user has a specific role (we won’t use it for this milestone but it should be usable in the future)
 
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Complete (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       https://github.com/manthan2905/IT202-007/pull/46
@@ -173,7 +201,7 @@ Include a function to check if a user has a specific role (we won’t use it for
 I.e., forms/input, navigation bar, etc
 
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Complete (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
        https://github.com/manthan2905/IT202-007/pull/46
@@ -199,7 +227,7 @@ styling
 Any technical errors or debug output displayed will result in a loss of points
 
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Complete (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       https://github.com/manthan2905/IT202-007/pull/46
@@ -220,7 +248,7 @@ error message user friendly
 Email, username, etc
 
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Complete (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
        https://github.com/manthan2905/IT202-007/pull/46
@@ -238,7 +266,7 @@ user Profile
 
 - [ ] \(11/11/2021 of completion) User will be able to edit their profile (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Complete (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
        https://github.com/manthan2905/IT202-007/pull/46
@@ -254,18 +282,7 @@ user able to change password
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
 ### End Line item / Feature Template### Line item / Feature template (use this for each bullet point)
-#### Don't delete this
 
-- [ ] \(11/11/2021 of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-       https://github.com/manthan2905/IT202-007/pull/46
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template
 
 - Milestone 2
 
