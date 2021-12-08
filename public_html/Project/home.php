@@ -1,15 +1,10 @@
+<?php require_once(__DIR__ . "/partials/nav.php"); ?>
 <?php
-require(__DIR__ . "/../../partials/nav.php");
-?>
-<h1>Home</h1>
-<?php
-
-if (is_logged_in(true)) {
-    echo "Welcome home, " . get_username();
-    //comment this out if you don't want to see the session variables
-    // echo "<pre>" . var_export($_SESSION, true) . "</pre>";
+//we use this to safely get the email to display
+$email = "";
+if (isset($_SESSION["user"]) && isset($_SESSION["user"]["email"])) {
+    $email = $_SESSION["user"]["email"];
 }
 ?>
-<?php
-require(__DIR__ . "/../../partials/flash.php");
-?>
+    <p>Welcome, <?php echo $email; ?></p>
+<?php require(__DIR__ . "/partials/flash.php");
