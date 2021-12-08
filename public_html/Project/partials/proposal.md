@@ -292,120 +292,129 @@ user able to change password
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Create the Accounts table (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/30/2021 of completion) Create the Accounts table (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
     - Screenshots
+
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
+<img width="1181" alt="Screen Shot 2021-12-07 at 9 40 11 PM" src="https://user-images.githubusercontent.com/68133264/145139281-b418cc15-a30d-49d1-bf32-aa8422bc68ff.png">
+
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Project setup steps (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/30/2021 of completion) Project setup steps (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
+<img width="1383" alt="Screen Shot 2021-12-07 at 9 51 39 PM" src="https://user-images.githubusercontent.com/68133264/145139904-501031ed-23ca-4920-98f1-8a7efb5f5b78.png">
+
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/30/2021 of completion) Create the Transactions table (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
+<img width="980" alt="Screen Shot 2021-12-07 at 9 52 45 PM" src="https://user-images.githubusercontent.com/68133264/145140021-55baf765-f622-4f48-b6be-de3a78f50f78.png">
+
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Create the Transactions table (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/30/2021 of completion) Dashboard page (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
+<img width="1439" alt="Screen Shot 2021-12-07 at 9 53 51 PM" src="https://user-images.githubusercontent.com/68133264/145140117-e8c3e33c-4792-4bca-9eb7-a3319ba6e46e.png">
+
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Dashboard page (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/30/2021 of completion) User will be able to create a checking account (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
+<img width="1440" alt="Screen Shot 2021-12-07 at 9 54 41 PM" src="https://user-images.githubusercontent.com/68133264/145140223-3ac227a7-35c8-4411-b322-2e42b09aafcf.png">
+
+### End Line item / Feature Template
+
+
+#### Don't delete this
+
+- [ ] \(11/30/2021 of completion) User will be able to list their accounts (from the proposal bullet point, if it's a sub-point indent it properly)
+  -  List of Evidence of Feature Completion
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Pull Requests
+      - PR link #1 (repeat as necessary)
+    - Screenshots
+      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+        - Screenshot #1 description explaining what you're trying to show
+
+<img width="1440" alt="Screen Shot 2021-12-07 at 9 57 16 PM" src="https://user-images.githubusercontent.com/68133264/145140459-bcde1c94-6fb7-4c2d-8411-b18b9b468e0f.png">
+
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) User will be able to create a checking account (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/30/2021 of completion) User will be able to click an account for more information (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
+<img width="1439" alt="Screen Shot 2021-12-07 at 9 56 32 PM" src="https://user-images.githubusercontent.com/68133264/145140419-093388af-eb7c-4fd6-9ff2-38a87f7f2680.png">
+
+
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) User will be able to list their accounts (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(11/30/2021 of completion) User will be able to deposit/withdraw from their account(s) (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
+ 
+<img width="1440" alt="Screen Shot 2021-12-07 at 9 57 57 PM" src="https://user-images.githubusercontent.com/68133264/145140528-762126ee-4674-4e65-8856-3e89decb84d1.png">
+
 ### End Line item / Feature Template
 
-#### Don't delete this
-
-- [ ] \(mm/dd/yyyy of completion) User will be able to click an account for more information (from the proposal bullet point, if it's a sub-point indent it properly)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template
-
-#### Don't delete this
-
-- [ ] \(mm/dd/yyyy of completion) User will be able to deposit/withdraw from their account(s) (from the proposal bullet point, if it's a sub-point indent it properly)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template
 - Milestone 3
 
 #### Don't delete this
