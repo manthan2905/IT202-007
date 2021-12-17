@@ -31,8 +31,6 @@ if (isset($_POST["save"])) {
   $account_src = $_POST["account_src"];
   $balance = $_POST["balance"];
   $memo = $_POST["memo"];
-
-  $username = $_POST["username"];
   $last_four = $_POST["last_four"];
 
   if(strlen($last_four) != 4){
@@ -44,11 +42,9 @@ if (isset($_POST["save"])) {
     'SELECT Accounts.id, Users.username, account_type
     FROM Accounts
     JOIN Users ON Accounts.user_id = Users.id
-    WHERE Users.username = :username
-    AND Accounts.account_number LIKE :last_four
+    WHERE Accounts.account_number LIKE :last_four
   ');
   $stmt->execute([
-    ':username' => $username,
     ':last_four' => "%$last_four"
   ]);
   $account_dest = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -67,8 +63,9 @@ if (isset($_POST["save"])) {
   $acct = $stmt->fetch(PDO::FETCH_ASSOC);
   if($acct["balance"] < $balance) {
     flash("Not enough funds to transfer!");
-    die(header("Location: transaction.php?type=transfer"));
+    die(header("Location: transaction_out.php?type=transfer"));
   }
+  $r = changeBalance($db, $account_src, $account_dest["id"], 'ext-transfer', $balance, $memo);
   
   if ($r) {
     flash("Successfully executed transaction.");
@@ -94,13 +91,6 @@ ob_end_flush();
     </select>
   </div>
   <?php endif; ?>
-  <div class="row">
-    <div class="col-sm">
-      <div class="form-group">
-        <label for="username">Destination User User Name</label>
-        <input type="text" class="form-control" id="username" name="username" maxlength="60" required placeholder="User Name">
-      </div>
-    </div>
     <div class="col-sm">
       <div class="form-group">
         <label for="last_four">Destination User Last 4 Digits</label>

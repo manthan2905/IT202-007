@@ -1,138 +1,93 @@
-<?php
-require(__DIR__ . "/../../partials/nav.php");
-?>
-<div class="container">
-  <div class="card">
-	<h2>Create an account</h2>
-    <form onsubmit="return validate(this)" method="POST">
-        <div>
-            <input class="inp_fld" type="email" name="email" required placeholder="Email"/>
-        </div>
-        <div>
-            <input class="inp_fld" type="text" name="username" required maxlength="30" placeholder="Username"/>
-        </div>
-        <div>
-            <input class="inp_fld" type="password" id="pw" name="password" required minlength="8" placeholder="Password"/>
-        </div>
-        <div>
-            <input class="inp_fld" type="password" name="confirm" required minlength="8"placeholder="Confirm Password" />
-        </div>
-        <input class="inp_btn" type="submit" value="Register" />
-    </form>
-  </div>
-</div>
-<script>
-    function validate(form) {
-        //TODO 1: implement JavaScript validation
-        //ensure it returns false for an error and true for success
-
-        return true;
-    }
-</script>
-<style>
-	.container {
-    	width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-    }
-    .card {
-		width: 30em;
-		padding: 2em;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-		border-radius: 10px;
-    }
-	.inp_fld {
-        border: solid 1px gray;
-		border-radius: 5px;
-		margin: 1em;
-		height: 35px;
-		width: 285px;
-		padding-left: 25px;
-    }
-	
-	.inp_btn {
-		border: none;
-		background-color: black;
-		border-radius: 5px;
-		margin: 1em;
-		height: 35px;
-		width: 285px;
-		color: white;
-		font-weight: bold;
-	}
-	
-	h2 {
-		font-family: Arial, sans-serif;
-	}
-</style>
+<?php require_once(__DIR__ . "/partials/nav.php"); ?>
 
 <?php
-//TODO 2: add PHP Code
-if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm"])) {
-    $email = se($_POST, "email", "", false);
-    $password = se($_POST, "password", "", false);
-    $confirm = se(
-        $_POST,
-        "confirm",
-        "",
-        false
-    );
-    $username = se($_POST, "username", "", false);
-    //TODO 3
-    $hasError = false;
-    if (empty($email)) {
-        flash("Email must not be empty", "danger");
-        $hasError = true;
+if (isset($_POST["register"])) {
+    $email = null;
+    $password = null;
+    $confirm = null;
+    $username = null;
+    $name = null;
+    if (isset($_POST["email"])) {
+        $email = $_POST["email"];
     }
-    //sanitize
-    $email = sanitize_email($email);
-    //validate
-    if (!is_valid_email($email)) {
-        flash("Invalid email address", "danger");
-        $hasError = true;
+    if (isset($_POST["password"])) {
+        $password = $_POST["password"];
     }
-    if (!preg_match('/^[a-z0-9_-]{3,16}$/i', $username)) {
-        flash("Username must only be alphanumeric and can only contain - or _", "danger");
-        $hasError = true;
+    if (isset($_POST["confirm"])) {
+        $confirm = $_POST["confirm"];
     }
-    if (empty($password)) {
-        flash("password must not be empty", "danger");
-        $hasError = true;
+    if (isset($_POST["username"])) {
+        $username = $_POST["username"];
     }
-    if (empty($confirm)) {
-        flash("Confirm password must not be empty", "danger");
-        $hasError = true;
+    if (isset($_POST["name"])) {
+        $name = $_POST["name"];
     }
-    if (strlen($password) < 8) {
-        flash("Password too short", "danger");
-        $hasError = true;
+    $isValid = true;
+    //check if passwords match on the server side
+    if ($password == $confirm) {
+        //not necessary to show
+        //echo "Passwords match <br>";
     }
-    if (
-        strlen($password) > 0 && $password !== $confirm
-    ) {
-        flash("Passwords must match", "danger");
-        $hasError = true;
+    else {
+        flash("Passwords don't match");
+        $isValid = false;
     }
-    if (!$hasError) {
-        //TODO 4
+    if (!isset($email) || !isset($password) || !isset($confirm)) {
+        $isValid = false;
+    }
+    //TODO other validation as desired, remember this is the last line of defense
+    if ($isValid) {
         $hash = password_hash($password, PASSWORD_BCRYPT);
+
         $db = getDB();
-        $stmt = $db->prepare("INSERT INTO Users (email, password, username) VALUES(:email, :password, :username)");
-        try {
-            $stmt->execute([":email" => $email, ":password" => $hash, ":username" => $username]);
-            flash("Successfully registered!");
-        } catch (Exception $e) {
-            flash("There was a problem registering", "danger");
-            flash("<pre>" . var_export($e, true) . "</pre>", "danger");
+        if (isset($db)) {
+            //here we'll use placeholders to let PDO map and sanitize our data
+            $stmt = $db->prepare("INSERT INTO Users(email, username, password, name) VALUES(:email,:username, :password, :name)");
+            //here's the data map for the parameter to data
+            $params = array(":email" => $email, ":username" => $username, ":password" => $hash, ":name" => $name);
+            $r = $stmt->execute($params);
+            $e = $stmt->errorInfo();
+            if ($e[0] == "00000") {
+                flash("Successfully registered! Please login.");
+            }
+            else {
+                if ($e[0] == "23000") {//code for duplicate entry
+                    flash("Username or email already exists.");
+                }
+                else {
+                    flash("An error occurred, please try again");
+                }
+            }
         }
     }
+    else {
+        flash( "There was a validation issue");
+    }
 }
+//safety measure to prevent php warnings
+if (!isset($email)) {
+    $email = "";
+}
+if (!isset($username)) {
+    $username = "";
+}
+
+if (!isset($name)) {
+    $name = "";
+}
+
 ?>
-<?php
-require(__DIR__ . "/../../partials/flash.php");
-?>
+    <form method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required value="<?php safer_echo($email); ?>"/>
+        <label for="user">Username:</label>
+        <input type="text" id="user" name="username" required maxlength="60" value="<?php safer_echo($username); ?>"/>
+        <label for="p1">Password:</label>
+        <input type="password" id="p1" name="password" required/>
+        <label for="p2">Confirm Password:</label>
+        <input type="password" id="p2" name="confirm" required/>
+        <label for="p3">name:</label>
+        <input type="name" id="p3" name="name" required/>
+        <input type="submit" name="register" value="Register"/>
+    </form>
+<?php require(__DIR__ . "/partials/flash.php");

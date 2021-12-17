@@ -4,10 +4,10 @@
 ?>
 <div class="container" id="flash">
     <?php $messages = getMessages(); ?>
-    <?php if ($messages) : ?>
-        <?php foreach ($messages as $msg) : ?>
-            <div class="row justify-content-center">
-                <div class="alert alert-<?php se($msg, 'color', 'info'); ?>" role="alert"><?php se($msg, "text", ""); ?></div>
+    <?php if ($messages): ?>
+        <?php foreach ($messages as $msg): ?>
+            <div class="row bg-secondary justify-content-center">
+                <p><?php echo $msg; ?></p>
             </div>
         <?php endforeach; ?>
     <?php endif; ?>
@@ -23,20 +23,3 @@
 
     moveMeUp(document.getElementById("flash"));
 </script>
-<style>
-    .alert-success {
-        background-color: lightgreen
-    }
-
-    .alert-warning {
-        background-color: lightyellow;
-    }
-
-    .alert-danger {
-        background-color: red;
-    }
-
-    .alert-info {
-        background-color: teal;
-    }
-</style>
