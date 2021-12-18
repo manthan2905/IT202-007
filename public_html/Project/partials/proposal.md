@@ -32,7 +32,10 @@
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
+<<<<<<< HEAD
+=======
       - https://github.com/manthan2905/IT202-007/pull/65
+>>>>>>> dev
     - Screenshots
 
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
@@ -49,7 +52,10 @@
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
+<<<<<<< HEAD
+=======
       - https://github.com/manthan2905/IT202-007/pull/65
+>>>>>>> dev
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
@@ -65,7 +71,10 @@
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
+<<<<<<< HEAD
+=======
       - https://github.com/manthan2905/IT202-007/pull/65
+>>>>>>> dev
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
@@ -81,7 +90,10 @@
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
+<<<<<<< HEAD
+=======
       - https://github.com/manthan2905/IT202-007/pull/65
+>>>>>>> dev
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
@@ -97,7 +109,10 @@
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
+<<<<<<< HEAD
+=======
       - https://github.com/manthan2905/IT202-007/pull/65
+>>>>>>> dev
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
@@ -114,7 +129,10 @@
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
+<<<<<<< HEAD
+=======
       - https://github.com/manthan2905/IT202-007/pull/65
+>>>>>>> dev
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
@@ -131,7 +149,10 @@
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
+<<<<<<< HEAD
+=======
       - https://github.com/manthan2905/IT202-007/pull/65
+>>>>>>> dev
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
@@ -148,7 +169,10 @@
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
       - PR link #1 (repeat as necessary)
+<<<<<<< HEAD
+=======
       - https://github.com/manthan2905/IT202-007/pull/65
+>>>>>>> dev
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show

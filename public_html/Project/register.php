@@ -6,6 +6,10 @@ if (isset($_POST["register"])) {
     $password = null;
     $confirm = null;
     $username = null;
+<<<<<<< HEAD
+    $name = null;
+=======
+>>>>>>> dev
     if (isset($_POST["email"])) {
         $email = $_POST["email"];
     }
@@ -18,6 +22,12 @@ if (isset($_POST["register"])) {
     if (isset($_POST["username"])) {
         $username = $_POST["username"];
     }
+<<<<<<< HEAD
+    if (isset($_POST["name"])) {
+        $name = $_POST["name"];
+    }
+=======
+>>>>>>> dev
     $isValid = true;
     //check if passwords match on the server side
     if ($password == $confirm) {
@@ -38,9 +48,15 @@ if (isset($_POST["register"])) {
         $db = getDB();
         if (isset($db)) {
             //here we'll use placeholders to let PDO map and sanitize our data
+<<<<<<< HEAD
+            $stmt = $db->prepare("INSERT INTO Users(email, username, password, name) VALUES(:email,:username, :password, :name)");
+            //here's the data map for the parameter to data
+            $params = array(":email" => $email, ":username" => $username, ":password" => $hash, ":name" => $name);
+=======
             $stmt = $db->prepare("INSERT INTO Users(email, username, password) VALUES(:email,:username, :password)");
             //here's the data map for the parameter to data
             $params = array(":email" => $email, ":username" => $username, ":password" => $hash);
+>>>>>>> dev
             $r = $stmt->execute($params);
             $e = $stmt->errorInfo();
             if ($e[0] == "00000") {
@@ -67,6 +83,14 @@ if (!isset($email)) {
 if (!isset($username)) {
     $username = "";
 }
+<<<<<<< HEAD
+
+if (!isset($name)) {
+    $name = "";
+}
+
+=======
+>>>>>>> dev
 ?>
     <form method="POST">
         <label for="email">Email:</label>
@@ -77,6 +101,11 @@ if (!isset($username)) {
         <input type="password" id="p1" name="password" required/>
         <label for="p2">Confirm Password:</label>
         <input type="password" id="p2" name="confirm" required/>
+<<<<<<< HEAD
+        <label for="p3">name:</label>
+        <input type="name" id="p3" name="name" required/>
+=======
+>>>>>>> dev
         <input type="submit" name="register" value="Register"/>
     </form>
 <?php require(__DIR__ . "/partials/flash.php");

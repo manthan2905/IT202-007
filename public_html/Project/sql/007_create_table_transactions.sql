@@ -4,7 +4,11 @@ CREATE TABLE Transactions
     act_src_id     int not null,
     act_dest_id    int null,
     amount         decimal(12, 2),
+<<<<<<< HEAD
+    action_type    varchar(10000), -- deposit, withdraw, transfer, etc
+=======
     action_type    varchar(10), -- deposit, withdraw, transfer, etc
+>>>>>>> dev
     memo           TEXT default null,
     expected_total decimal(12, 2),
     created        datetime default current_timestamp,
