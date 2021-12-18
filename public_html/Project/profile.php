@@ -9,7 +9,21 @@ if (!is_logged_in()) {
     die(header("Location: login.php"));
 }
 
+
+
 $db = getDB();
+
+$stmt = $db->prepare("SELECT name from Users WHERE id = :id LIMIT 1");
+        $stmt->execute([":id" => get_user_id()]);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($result) {
+            $name = $result["name"];
+            //let's update our session too
+            $_SESSION["user"]["name"]= $name;
+        }
+        else {
+
+        }
 //save data if we submitted the form
 if (isset($_POST["saved"])) {
     $isValid = true;
@@ -63,15 +77,23 @@ if (isset($_POST["saved"])) {
             $newUsername = $username;
         }
     }
+
+    if (!empty($_POST["name"])) {
+        $stmt = $db->prepare ("SELECT * from `Users` where name = :name");
+        $stmt->execute([":name" => $name]);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $name = $reasult;
+    }
+
     if ($isValid) {
-        $stmt = $db->prepare("UPDATE Users set email = :email, username= :username where id = :id");
-        $r = $stmt->execute([":email" => $newEmail, ":username" => $newUsername, ":id" => get_user_id()]);
+        $stmt = $db->prepare("UPDATE Users set email = :email, username= :username , name = :name where id = :id");
+        $r = $stmt->execute([":email" => $newEmail, ":username" => $newUsername, ":id" => get_user_id(), ":name" => $name]);
         if ($r) {
             flash("Updated profile");
         }
         else {
             flash("Error updating profile");
-        }
+        } 
         //password is optional, so check if it's even set
         //if so, then check if it's a valid reset request
         if (!empty($_POST["password"]) && !empty($_POST["confirm"])) {
@@ -89,32 +111,32 @@ if (isset($_POST["saved"])) {
                 }
             }
         }
+    }
+
 //fetch/select fresh data in case anything changed
-        $stmt = $db->prepare("SELECT email, username from Users WHERE id = :id LIMIT 1");
+        $stmt = $db->prepare("SELECT email, username, name from Users WHERE id = :id LIMIT 1");
         $stmt->execute([":id" => get_user_id()]);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($result) {
             $email = $result["email"];
             $username = $result["username"];
+            $name = $result["name"];
             //let's update our session too
             $_SESSION["user"]["email"] = $email;
             $_SESSION["user"]["username"] = $username;
+            $_SESSION["user"]["name"]= $name;
         }
-    }
-    else {
-        //else for $isValid, though don't need to put anything here since the specific failure will output the message
-    }
+        else {
+
+        }
 }
-
-
 ?>
-
     <form method="POST">
+        <p>Welcome, <?php echo $name; ?></p>
         <label for="email">Email</label>
         <input type="email" name="email" value="<?php safer_echo(get_email()); ?>"/>
         <label for="username">Username</label>
         <input type="text" maxlength="60" name="username" value="<?php safer_echo(get_username()); ?>"/>
-        <!-- DO NOT PRELOAD PASSWORD-->
         <label for="pw">Password</label>
         <input type="password" name="password"/>
         <label for="cpw">Confirm Password</label>

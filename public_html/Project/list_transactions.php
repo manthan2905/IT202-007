@@ -62,10 +62,6 @@ if (isset($_POST["search"]) && !empty($query) && !empty($account_type)) {
                     <div>Created:</div>
                     <div><?php safer_echo($r["created"]); ?></div>
                 </div>
-                <div>
-                    <a type="button" href="test_edit_transactions.php?id=<?php safer_echo($r['id']); ?>">Edit</a>
-                    <a type="button" href="test_view_transactions.php?id=<?php safer_echo($r['id']); ?>">View</a>
-                </div>
             </div>
         <?php endforeach; ?>
     </div>

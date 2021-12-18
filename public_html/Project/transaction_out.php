@@ -48,6 +48,11 @@ if (isset($_POST["save"])) {
     ':last_four' => "%$last_four"
   ]);
   $account_dest = $stmt->fetch(PDO::FETCH_ASSOC);
+
+  if($account_src == $account_dest["id"] || $account_dest["username"] == get_username()) {
+    flash("Cannot transfer to the same user!");
+    die(header("Location: transaction_out.php"));
+  }
   if($account_dest["account_type"] == "loan") {
     flash("Cannot transfer to a loan account!");
     die(header("Location: transaction_out.php"));
@@ -58,7 +63,7 @@ if (isset($_POST["save"])) {
   $acct = $stmt->fetch(PDO::FETCH_ASSOC);
   if($acct["balance"] < $balance) {
     flash("Not enough funds to transfer!");
-    die(header("Location: create_transaction.php?type=transfer"));
+    die(header("Location: transaction_out.php?type=transfer"));
   }
   $r = changeBalance($db, $account_src, $account_dest["id"], 'ext-transfer', $balance, $memo);
   
@@ -71,7 +76,7 @@ if (isset($_POST["save"])) {
 ob_end_flush();
 ?>
 
-<h3 class="text-center mt-4">Create Transection</h3>
+<h3 class="text-center mt-4">Transfer Out</h3>
 
 <form method="POST">
   <?php if (count($results) > 0): ?>
@@ -88,7 +93,7 @@ ob_end_flush();
   <?php endif; ?>
     <div class="col-sm">
       <div class="form-group">
-        <label for="last_four">Destination Accounts Last 4 Digits</label>
+        <label for="last_four">Destination User Last 4 Digits</label>
         <input type="number" class="form-control" id="last_four" name="last_four" min="0" max="9999" required placeholder="XXXX">
       </div>
     </div>
