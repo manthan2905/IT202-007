@@ -48,11 +48,6 @@ if (isset($_POST["save"])) {
     ':last_four' => "%$last_four"
   ]);
   $account_dest = $stmt->fetch(PDO::FETCH_ASSOC);
-
-  if($account_src != $account_dest["id"] || $account_dest["username"] != get_username()) {
-    flash("Cannot transfer to the different user!");
-    die(header("Location: transaction_out.php"));
-  }
   if($account_dest["account_type"] == "loan") {
     flash("Cannot transfer to a loan account!");
     die(header("Location: transaction_out.php"));
