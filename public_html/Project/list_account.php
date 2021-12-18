@@ -18,7 +18,10 @@ if (isset($_POST["search"]) && !empty($query)) {
     flash("There was a problem fetching the results");
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
 ?>
 <form method="POST">
     <input name="query" placeholder="Search Username" value="<?php safer_echo($query); ?>"/>
@@ -53,6 +56,13 @@ if (isset($_POST["search"]) && !empty($query)) {
                     <div>Owner ID:</div>
                     <div><?php safer_echo($r["user_id"]); ?></div>
                 </div>
+<<<<<<< HEAD
+=======
+                <div>
+                    <a type="button" href="test_edit_account.php?id=<?php safer_echo($r['id']); ?>">Edit</a>
+                    <a type="button" href="test_view_account.php?id=<?php safer_echo($r['id']); ?>">View</a>
+                </div>
+>>>>>>> dev
             </div>
         <?php endforeach; ?>
     </div>

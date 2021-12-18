@@ -30,7 +30,11 @@ if (isset($_POST["login"])) {
     if ($isValid) {
         $db = getDB();
         if (isset($db)) {
+<<<<<<< HEAD
             $stmt = $db->prepare("SELECT id, email, username, name, password from Users WHERE email = :email LIMIT 1");
+=======
+            $stmt = $db->prepare("SELECT id, email, username, password from Users WHERE email = :email LIMIT 1");
+>>>>>>> dev
 
             $params = array(":email" => $email);
             $r = $stmt->execute($params);

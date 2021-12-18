@@ -39,6 +39,7 @@ function get_user_id() {
     return -1;
 }
 
+<<<<<<< HEAD
 function get_name() {
     if (is_logged_in() && isset($_SESSION["users"]["name"])) {
         return $_SESSION["users"]["name"];
@@ -46,6 +47,8 @@ function get_name() {
     return "";
 }
 
+=======
+>>>>>>> dev
 function safer_echo($var) {
     if (!isset($var)) {
         echo "";
@@ -102,6 +105,7 @@ function bank_act($account1, $account2, $amountChange, $type, $memo =""){
 	return $result;
 }
 
+<<<<<<< HEAD
 
 function changeBalance($db, $src, $dest, $type, $balChange, $memo = '') {
     // Src Account Balance
@@ -154,5 +158,7 @@ function changeBalance($db, $src, $dest, $type, $balChange, $memo = '') {
   
     return $transactions;
   }
+=======
+>>>>>>> dev
 //end flash
 ?>
