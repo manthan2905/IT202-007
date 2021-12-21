@@ -21,7 +21,7 @@ $db = getDB();
 $stmt = $db->prepare(
   "SELECT id, account_number, account_type, balance
   FROM Accounts
-  WHERE user_id = :id AND account_type NOT LIKE 'loan'
+  WHERE user_id = :id AND account_type NOT LIKE 'loan' AND active = 1
   ORDER BY id ASC
 ");
 $stmt->execute([':id' => $user]);
