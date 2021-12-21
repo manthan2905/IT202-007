@@ -19,64 +19,76 @@ Milestone 4
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(12/21/2021 of completion) User will be able open a savings account (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
+    - Direct Link:https://mp876-prod.herokuapp.com/Project/create_account.php
     - Pull Requests
-      - PR link #1 (repeat as necessary)
+      - https://github.com/manthan2905/IT202-007/pull/102
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147005969-16feaa8e-664a-41e5-be83-b49b32848e1b.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147006008-ae2746f2-d93a-43d9-a880-0bde74bded3a.png">
+      - <img width="1437" alt="image" src="https://user-images.githubusercontent.com/68133264/147006119-79dc5063-2feb-4f1a-bdc1-da2d9642a5ab.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147006202-38b8873b-6a0d-43e9-8d44-4f8e7ae58b0b.png">
+
         - Screenshot #1 description explaining what you're trying to show
+        - In the screenshot above I am showing the option for creating savings account.
+        - Screenshot #2 description explaining what you're trying to show
+        - in the second screenshot it shows that the savings account created.
+        - Screenshot #3 and 4 description explaining what you're trying to show
+        - In the last screenshots it shows that the savings account has been created.
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(12/21/2021 of completion) User will be able to take out a loan (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: https://mp876-prod.herokuapp.com/Project/create_account.php
     - Pull Requests
-      - PR link #1 (repeat as necessary)
+      - https://github.com/manthan2905/IT202-007/pull/102
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147006396-afb07f22-9d42-41da-8406-e4c89b5a6625.png">
+      - <img width="1439" alt="image" src="https://user-images.githubusercontent.com/68133264/147006425-6463f2cf-0c82-4b3d-b542-07f3eb4460e0.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147006447-a7b9fd4b-6699-409f-a863-1de5df3c366b.png">
+
         - Screenshot #1 description explaining what you're trying to show
+        - In the screenshot above I am showing the option for creating loan.
+        - Screenshot #2 description explaining what you're trying to show
+        - in the second screenshot it shows that the loan has been created.
+        - Screenshot #3 description explaining what you're trying to show
+        - In the last screenshots it shows that the loan has been created and shows the APY.
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(12/21/2021 of completion) Listing accounts and/or viewing Account Details should show any applicable APY or “-” if none is set for the particular account (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
     - Pull Requests
-      - PR link #1 (repeat as necessary)
+      - https://github.com/manthan2905/IT202-007/pull/102
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147006929-7f2990ca-277a-4690-9d77-bf8ff169f704.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147006948-4fcb98bc-6d5c-408b-b000-e4e6097bfb13.png">
+
         - Screenshot #1 description explaining what you're trying to show
+        - In the image above shows the account information and detail about the accounts user have.
+        - Screenshot #2 description explaining what you're trying to show
+        - In the next image it shows the loan with APY on it.
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(mm/dd/yyyy of completion) User will be able to close an account (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: https://mp876-prod.herokuapp.com/Project/close_account.php
     - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-### End Line item / Feature Template
-
-#### Don't delete this
-
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
+      - https://github.com/manthan2905/IT202-007/pull/102
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
