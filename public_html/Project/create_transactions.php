@@ -21,7 +21,7 @@ $db = getDB();
 $stmt = $db->prepare(
   "SELECT id, account_number, account_type, balance
   FROM Accounts
-  WHERE user_id = :id AND account_type NOT LIKE 'loan'
+  WHERE user_id = :id AND account_type NOT LIKE 'loan' AND active = 1
   ORDER BY id ASC
 ");
 $stmt->execute([':id' => $user]);
@@ -58,7 +58,7 @@ if (isset($_POST["save"])) {
   $acct = $stmt->fetch(PDO::FETCH_ASSOC);
   if($acct["balance"] < $balance) {
     flash("Not enough funds to transfer!");
-    die(header("Location: create_transaction.php?type=transfer"));
+    die(header("Location: create_transactions.php"));
   }
   $r = changeBalance($db, $account_src, $account_dest["id"], 'ext-transfer', $balance, $memo);
   
