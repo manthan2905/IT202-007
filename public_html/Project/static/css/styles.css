@@ -9,7 +9,7 @@ ul[class="nav"]{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #8F1010;
+    background-color: lightblue;
 }
 
 .nav > li {
@@ -18,14 +18,14 @@ ul[class="nav"]{
 
 .nav > li a {
     display: block;
-    color: #ffffff;
+    color: black;
     text-align: center;
     padding: 16px;
     text-decoration: none;
 }
 
 .nav > li a:hover {
-    background-color: #39ca40;
+    background-color: white;
 }
 
 input, select {
@@ -38,10 +38,38 @@ input, select {
     box-sizing: border-box;
 }
 
+tr {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+} 
+.list-group{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.list-group-item{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 input[type=submit] {
     width: 100%;
-    background-color: #8F1010;
-    color: white;
+    background-color: lightblue;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -72,4 +100,16 @@ input:nth-of-type(4) {
 input:nth-of-type(5) {
     margin-left: 25px !important;
     margin-right: 25px !important;
+}
+
+button{
+  width: 100%;
+  background-color: lightblue;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

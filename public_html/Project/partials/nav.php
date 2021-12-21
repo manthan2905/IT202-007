@@ -13,6 +13,7 @@ require_once(__DIR__ . "/../lib/helpers.php");
     <?php endif; ?>
     <?php if (is_logged_in()): ?>
         <li><a href="profile.php">Profile</a></li>
+        <li><a href="accounts.php">Account</a></li>
         <li><a href="create_account.php">Create Account</a></li>
         <li><a href="edit_account.php">Edit Account</a></li>
         <li><a href="list_account.php">List Account</a></li>
@@ -20,6 +21,7 @@ require_once(__DIR__ . "/../lib/helpers.php");
         <li><a href="transaction_out.php">Transection Out</a></li>
         <li><a href="list_transactions.php">List Transactions</a></li>
         <li><a href="reset_password.php">Reset Password</a></li>
+        <li><a href="close_account.php">Closing your account</a></li>
         <li><a href="logout.php">Logout</a></li>
     <?php endif; ?>
 </ul>
