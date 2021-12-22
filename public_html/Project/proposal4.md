@@ -83,7 +83,7 @@ Milestone 4
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) User will be able to close an account (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(12/21/2021 of completion) User will be able to close an account (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
     - Status: Completed (Completed, Partially working, Incomplete, Pending)
     - Direct Link: https://mp876-prod.herokuapp.com/Project/close_account.php
@@ -91,20 +91,35 @@ Milestone 4
       - https://github.com/manthan2905/IT202-007/pull/102
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147014949-63212466-5069-436f-bfd5-93ea8bc53398.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147014971-89955ead-c970-4d6a-870d-0c64c4f3d4f7.png">
+
         - Screenshot #1 description explaining what you're trying to show
+        - In the first Screenshot it shows the account that we are closing
+        - Screenshot #2 description explaining what you're trying to show
+        - In this image it shows that the account had been closed and no longer shows on the accounts page and while doing any transections.
 ### End Line item / Feature Template
 
 #### Don't delete this
 
-- [ ] \(mm/dd/yyyy of completion) Feature Title (from the proposal bullet point, if it's a sub-point indent it properly)
+- [ ] \(12/21/2021 of completion) Admin role (from the proposal bullet point, if it's a sub-point indent it properly)
   -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+    - Status: Completed (Completed, Partially working, Incomplete, Pending)
+    - Direct Link: https://mp876-prod.herokuapp.com/Project/login.php
     - Pull Requests
-      - PR link #1 (repeat as necessary)
+      - https://github.com/manthan2905/IT202-007/pull/102
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
+      - <img width="1439" alt="image" src="https://user-images.githubusercontent.com/68133264/147015291-b2df9f57-932b-4db8-aa03-d253b77c8fce.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147015320-658a57ea-f9e1-4b7c-8d01-79ba425c9d09.png">
+      - <img width="1439" alt="image" src="https://user-images.githubusercontent.com/68133264/147015375-785b6310-2c80-4470-88d3-3cd0ab038d92.png">
+
         - Screenshot #1 description explaining what you're trying to show
+        - In the first image it shows that the user is Admin and is logged in as a Admin
+        - Screenshot #2 description explaining what you're trying to show
+        - In the second picture it shows that the admin have access to the list accounts and search accounts by username.
+        - Screenshot #3 description explaining what you're trying to show
+        - In the last picture it shows that by searching a account by username it shows the list of accounts under that user.
 ### End Line item / Feature Template
 
 Intructions
