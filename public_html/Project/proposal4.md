@@ -110,9 +110,9 @@ Milestone 4
       - https://github.com/manthan2905/IT202-007/pull/102
     - Screenshots
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-      - <img width="1439" alt="image" src="https://user-images.githubusercontent.com/68133264/147015291-b2df9f57-932b-4db8-aa03-d253b77c8fce.png">
-      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147015320-658a57ea-f9e1-4b7c-8d01-79ba425c9d09.png">
-      - <img width="1439" alt="image" src="https://user-images.githubusercontent.com/68133264/147015375-785b6310-2c80-4470-88d3-3cd0ab038d92.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147018695-1076608e-9eba-41e9-b1cd-e7a3e154d431.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147018676-62a4b893-a9d2-4640-8ec1-68a5ab9fe61d.png">
+      - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/68133264/147018641-caa6beaa-097c-4e79-af5c-4e0d44fef2b7.png">
 
         - Screenshot #1 description explaining what you're trying to show
         - In the first image it shows that the user is Admin and is logged in as a Admin
