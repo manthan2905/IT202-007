@@ -15,7 +15,6 @@ require_once(__DIR__ . "/../lib/helpers.php");
         <li><a href="profile.php">Profile</a></li>
         <li><a href="accounts.php">Account</a></li>
         <li><a href="create_account.php">Create Account</a></li>
-        <li><a href="edit_account.php">Edit Account</a></li>
         <li><a href="list_account.php">List Account</a></li>
         <li><a href="create_transactions.php">Create Transactions</a></li>
         <li><a href="transaction_out.php">Transection Out</a></li>
